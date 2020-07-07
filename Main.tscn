@@ -1,0 +1,195 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Button.gd" type="Script" id=1]
+[ext_resource path="res://splash.png" type="Texture" id=2]
+[ext_resource path="res://assets/joystick_bg.png" type="Texture" id=4]
+[ext_resource path="res://assets/a.png" type="Texture" id=5]
+[ext_resource path="res://assets/joystick.png" type="Texture" id=7]
+[ext_resource path="res://JOYSTICK.gd" type="Script" id=9]
+[ext_resource path="res://assets/x.png" type="Texture" id=12]
+[ext_resource path="res://assets/y.png" type="Texture" id=13]
+[ext_resource path="res://assets/b.png" type="Texture" id=16]
+[ext_resource path="res://assets/start.png" type="Texture" id=19]
+[ext_resource path="res://assets/select.png" type="Texture" id=20]
+[ext_resource path="res://assets/r1.png" type="Texture" id=22]
+[ext_resource path="res://assets/r2.png" type="Texture" id=23]
+[ext_resource path="res://assets/l1.png" type="Texture" id=26]
+[ext_resource path="res://assets/l2.png" type="Texture" id=27]
+[ext_resource path="res://Main.gd" type="Script" id=29]
+
+[node name="Control" type="TextureRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 7
+script = ExtResource( 29 )
+
+[node name="JOYSTICK" type="TextureRect" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 50.0
+margin_top = -350.0
+margin_right = 350.0
+margin_bottom = -49.9999
+rect_pivot_offset = Vector2( 150, 150 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="JOYSTICK"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -48.0
+margin_top = -48.0
+margin_right = 47.9999
+margin_bottom = 48.0
+rect_pivot_offset = Vector2( 48, 48 )
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="a" type="TextureRect" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -245.77
+margin_top = -159.573
+margin_right = -117.77
+margin_bottom = -31.573
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 1 )
+
+[node name="b" type="TextureRect" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -145.384
+margin_top = -249.471
+margin_right = -17.384
+margin_bottom = -121.471
+texture = ExtResource( 16 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 1 )
+
+[node name="x" type="TextureRect" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -313.194
+margin_top = -273.444
+margin_right = -185.194
+margin_bottom = -145.444
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 1 )
+
+[node name="y" type="TextureRect" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -217.302
+margin_top = -363.343
+margin_right = -89.302
+margin_bottom = -235.343
+texture = ExtResource( 13 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="l1" type="TextureRect" parent="."]
+margin_left = 1.0
+margin_right = 241.0
+margin_bottom = 80.0
+texture = ExtResource( 26 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 1 )
+
+[node name="l2" type="TextureRect" parent="."]
+margin_left = 241.32
+margin_top = -0.174805
+margin_right = 481.32
+margin_bottom = 79.8252
+texture = ExtResource( 27 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 1 )
+
+[node name="r1" type="TextureRect" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -239.0
+margin_top = -1.0
+margin_right = 1.0
+margin_bottom = 79.0
+texture = ExtResource( 22 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="r2" type="TextureRect" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -477.94
+margin_top = 0.174805
+margin_right = -237.94
+margin_bottom = 80.1748
+texture = ExtResource( 23 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 1 )
+
+[node name="start" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 13.6642
+margin_top = -105.634
+margin_right = 141.664
+margin_bottom = -41.634
+texture = ExtResource( 19 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="select" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -126.247
+margin_top = -110.204
+margin_right = 1.75342
+margin_bottom = -46.2043
+texture = ExtResource( 20 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 1 )
