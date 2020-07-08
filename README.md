@@ -4,6 +4,8 @@ This is the client repository, [host](https://github.com/PonasKovas/rinput-host/
 
 Made with Godot, this mobile app lets you use your phone as a wireless controller for your PC (Linux only).
 
+![screenshot](https://i.imgur.com/2wQFwwX.png)
+
 ## Usage
 
 Run the host application on your computer and then launch this app on your phone. You should see your
